@@ -107,6 +107,8 @@ in
 
               inherit nativeBuildInputs;
 
+              PUPPETEER_SKIP_DOWNLOAD = true;
+
               unpackPhase = concatStringsSep "\n"
                 (
                   map
